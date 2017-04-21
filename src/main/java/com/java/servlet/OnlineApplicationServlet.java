@@ -26,7 +26,6 @@ public class OnlineApplicationServlet extends HttpServlet {
 
 		PrintWriter out = resp.getWriter();
 		resp.setContentType("text/html");
-		resp.setIntHeader("refresh", 2);
 		Enumeration<String> parametrNames = req.getParameterNames();
 
 		while (parametrNames.hasMoreElements()) {
