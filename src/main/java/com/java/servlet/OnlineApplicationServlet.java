@@ -2,6 +2,7 @@ package com.java.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.Principal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Enumeration;
@@ -25,7 +26,7 @@ public class OnlineApplicationServlet extends HttpServlet {
 
 		PrintWriter out = resp.getWriter();
 		resp.setContentType("text/html");
-
+		resp.setIntHeader("refresh", 2);
 		Enumeration<String> parametrNames = req.getParameterNames();
 
 		while (parametrNames.hasMoreElements()) {
