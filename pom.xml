@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>servlet-form-submit-1</finalName>
+    <finalName>servlet-form-submit-11</finalName>
   </build>
 </project>
